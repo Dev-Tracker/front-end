@@ -1,0 +1,39 @@
+.signUp {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  justify-content: center;
+
+  .account {
+    padding-right: 1%;
+    width: 72%;
+  }
+
+  .register {
+    text-decoration: none;
+    color: rgb(300, 50, 122);
+  }
+}
+
+.logContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1.5% auto;
+  width: 100%;
+  text-align: center;
+}
+
+.forget {
+  text-decoration: none;
+  color: grey;
+}
+
+.field {
+  margin: 1.5% 0%;
+}
+
+#signin-button {
+  width: 14.35rem;
+}

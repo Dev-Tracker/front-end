@@ -3,7 +3,7 @@ import Nav from "../components/marketing-nav";
 const marketing = () => {
   return (
     <div>
-      <Nav />
+      <h1>Your new career is a track away</h1>
     </div>
   );
 };
