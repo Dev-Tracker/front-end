@@ -8,10 +8,16 @@ const StandOut = () => {
         <div className="marketingText">
           <div className="marketing">
             <h2 className="hunt">
-              Stand apart <br/>from the crowd
+              Stand apart <br />
+              from the crowd
             </h2>
             <p className="organize">
-            Access Industry Leading Resources <br /> to help  you land the job of your <br />dreams. Learn how to create a world <br />class resume,  master the tech <br />interview, and close the deal with a salary higher than your peers. 
+              Access Industry Leading Resources <br /> to help you land the job
+              of your <br />
+              dreams. Learn how to create a world <br />
+              class resume, master the tech <br />
+              interview, and close the deal with a salary higher than your
+              peers.
             </p>
           </div>
         </div>

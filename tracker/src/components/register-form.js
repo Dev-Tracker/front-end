@@ -1,11 +1,23 @@
 import React, { useState } from "react";
 import { TextField, Button } from "@material-ui/core";
+import { blue } from "@material-ui/core/colors";
+import { withStyles } from "@material-ui/core/styles";
 import Email from "../assets/icons8-important-mail-25.svg";
 import Password from "../assets/icons8-lock-25.svg";
 import Person from "../assets/icons8-person-25.svg";
 import InputAdornment from "@material-ui/core/InputAdornment";
 
 function Register(props) {
+  const ColorButton = withStyles(theme => ({
+    root: {
+      color: theme.palette.getContrastText(blue[800]),
+      backgroundColor: blue[800],
+      "&:hover": {
+        backgroundColor: blue[600]
+      }
+    }
+  }))(Button);
+
   const [UserData, setUserData] = useState({
     first_name: "",
     last_name: "",
@@ -101,14 +113,14 @@ function Register(props) {
         />
       </div>
       <div className="field">
-        <Button
+        <ColorButton
           id="register-button"
           variant="contained"
           color="secondary"
           type="submit"
         >
           Sign up for free
-        </Button>
+        </ColorButton>
       </div>
     </form>
   );

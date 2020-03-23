@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "@material-ui/core";
+import { blue } from "@material-ui/core/colors";
+import { withStyles } from "@material-ui/core/styles";
 import Track from "../assets/commandCenter.png";
 import Research from "../assets/research.png";
 import { NavLink } from "react-router-dom";
@@ -7,6 +9,16 @@ import Folder from "../assets/icons8-folder-25.svg";
 import Search from "../assets/icons8-search-25.svg";
 
 const CommandCenter = () => {
+  const ColorButton = withStyles(theme => ({
+    root: {
+      color: theme.palette.getContrastText(blue[800]),
+      backgroundColor: blue[800],
+      "&:hover": {
+        backgroundColor: blue[600]
+      }
+    }
+  }))(Button);
+
   const [track, setTrack] = useState(true);
   const [research, setResearch] = useState(false);
   //   const [border, setBorder] = useState(true);
@@ -26,7 +38,7 @@ const CommandCenter = () => {
   console.log("research", research);
 
   return (
-    <div className="marketingContainer">
+    <div id="marketTop" className="marketingContainer">
       <div className="marketingBox">
         <div className="marketingText">
           <div className="switchImage">
@@ -62,14 +74,14 @@ const CommandCenter = () => {
             </p>
             <div className="callToAction">
               <NavLink className="forget" to="/register">
-                <Button
+                <ColorButton
                   id="link-register-button"
                   variant="contained"
                   color="secondary"
                   type="submit"
                 >
                   Sign up for free
-                </Button>
+                </ColorButton>
               </NavLink>
             </div>
           </div>

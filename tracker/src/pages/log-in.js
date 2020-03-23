@@ -1,7 +1,6 @@
 import React from "react";
 import LogIn from "../components/log-in-form";
 import { NavLink, Route, Switch } from "react-router-dom";
-import Ninja from "../components/reset";
 
 const LogInPage = () => {
   return (
@@ -24,7 +23,7 @@ const LogInPage = () => {
       </NavLink>
       <Switch>
         <Route exact path="/register"></Route>
-        <Route path="/reset-password">{Ninja}</Route>
+        <Route path="/reset-password"></Route>
       </Switch>
     </div>
   );

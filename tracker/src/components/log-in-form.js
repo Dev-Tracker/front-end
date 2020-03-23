@@ -1,10 +1,22 @@
 import React, { useState } from "react";
 import { TextField, Button } from "@material-ui/core";
+import { blue } from "@material-ui/core/colors";
+import { withStyles } from "@material-ui/core/styles";
 import Email from "../assets/icons8-important-mail-25.svg";
 import Password from "../assets/icons8-lock-25.svg";
 import InputAdornment from "@material-ui/core/InputAdornment";
 
 function LogIn(props) {
+  const ColorButton = withStyles(theme => ({
+    root: {
+      color: theme.palette.getContrastText(blue[800]),
+      backgroundColor: blue[800],
+      "&:hover": {
+        backgroundColor: blue[600]
+      }
+    }
+  }))(Button);
+
   const [credentials, setCredentials] = useState({
     email: "",
     password: ""
@@ -62,14 +74,14 @@ function LogIn(props) {
         />
       </div>
       <div className="field">
-        <Button
+        <ColorButton
           id="signin-button"
           variant="contained"
           color="secondary"
           type="submit"
         >
           Continue
-        </Button>
+        </ColorButton>
       </div>
     </form>
   );

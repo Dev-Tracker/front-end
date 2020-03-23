@@ -8,10 +8,12 @@ const Organize = () => {
         <div className="marketingText">
           <div className="marketing">
             <h2 className="hunt">
-              Organize <br/>your search
+              Organize <br />
+              your search
             </h2>
             <p className="organize">
-            Other applications track everything. <br /> At Trackr we track what's essential <br />and leave you with more time to<br /> prep for what matters. 
+              Other applications track everything. At Trackr we track what's
+              essential and leave you with more time to prep for what matters.
             </p>
           </div>
         </div>

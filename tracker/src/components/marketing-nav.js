@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@material-ui/core";
-import { red } from "@material-ui/core/colors";
+import { blue } from "@material-ui/core/colors";
 import { withStyles } from "@material-ui/core/styles";
 import { NavLink, Route, Switch } from "react-router-dom";
 import Logo from "../tracker.png";
@@ -12,10 +12,10 @@ import Corporate from "../pages/corporate";
 const marketingNav = () => {
   const ColorButton = withStyles(theme => ({
     root: {
-      color: theme.palette.getContrastText(red[800]),
-      backgroundColor: red[800],
+      color: theme.palette.getContrastText(blue[800]),
+      backgroundColor: blue[800],
       "&:hover": {
-        backgroundColor: red[600]
+        backgroundColor: blue[600]
       }
     }
   }))(Button);
