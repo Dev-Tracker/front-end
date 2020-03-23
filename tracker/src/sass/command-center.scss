@@ -1,0 +1,90 @@
+.marketingContainer {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 3%;
+  justify-content: center;
+  align-content: center;
+  width: 60%;
+}
+
+.switchImage {
+  display: flex;
+  margin: 0 auto;
+  justify-content: flex-start;
+}
+
+.marketingPictures {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+}
+
+.marketingBox {
+  width: 50%;
+}
+
+.marketing {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#link-register-button {
+  text-decoration: none;
+}
+
+.borderRender {
+  border: 2px solid white;
+  border-bottom: 2px solid red;
+}
+
+#pointer1 {
+  cursor: pointer;
+  margin: 0px 20px;
+}
+
+#pointer2 {
+  cursor: pointer;
+  margin: 0px 20px;
+}
+
+.hunt {
+  font-size: 3.5rem;
+}
+
+.organize {
+  font-size: 2rem;
+  margin-top: 0px;
+  color: grey;
+}
+
+.marketingCenter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#moveRight {
+  margin-right: 300px;
+  background-color: red;
+}
+
+
+.marketingContainer2 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    padding-top: 3%;
+    justify-content: center;
+    align-content: center;
+    width: 60%;
+  }
+
+  .marketingPictures2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+  }

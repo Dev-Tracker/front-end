@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "react-lottie";
-import Ninja from "../NinGenie.json"
+import Ninja from "../assets/ninja.json"
 
 const Corporate = () => {
   return (

@@ -42,7 +42,7 @@ const marketingNav = () => {
         </Route>
         <Route path="/log-in">{LogInPage}</Route>
         <Route path="/register">{Register}</Route>
-  <Route path="/tos-privacy">{Corporate}</Route>
+        <Route path="/tos-privacy">{Corporate}</Route>
       </Switch>
     </>
   );
