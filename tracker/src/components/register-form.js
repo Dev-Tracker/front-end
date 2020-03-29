@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import axios from "axios";
+import { useHistory } from "react-router-dom";
 import { TextField, Button } from "@material-ui/core";
 import { blue } from "@material-ui/core/colors";
 import { withStyles } from "@material-ui/core/styles";
@@ -32,9 +34,26 @@ function Register(props) {
     });
   };
 
+  let history = useHistory();
+
   const handleSubmit = e => {
     e.preventDefault();
-    console.log("registered");
+    axios
+      .post("https://developer-tracker.herokuapp.com/api/register", UserData)
+      .then(register => {
+        localStorage.setItem("token", register.data.token);
+        localStorage.setItem("id", register.data.id);
+        history.push("/app");
+      })
+      .catch(err => {
+        console.log("error", err);
+      });
+    setUserData({
+      first_name: "",
+      last_name: "",
+      email: "",
+      password: ""
+    });
   };
 
   return (

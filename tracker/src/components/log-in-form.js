@@ -5,6 +5,7 @@ import { withStyles } from "@material-ui/core/styles";
 import Email from "../assets/icons8-important-mail-25.svg";
 import Password from "../assets/icons8-lock-25.svg";
 import InputAdornment from "@material-ui/core/InputAdornment";
+import axios from "axios";
 
 function LogIn(props) {
   const ColorButton = withStyles(theme => ({
@@ -31,6 +32,15 @@ function LogIn(props) {
 
   const handleSubmit = e => {
     e.preventDefault();
+    axios
+      .post("https://developer-tracker.herokuapp.com/api/login", credentials)
+      .then(res => {
+        localStorage.setItem("token", res.data.token);
+      })
+      .catch(err => {
+        console.log("error", err);
+      });
+
     console.log("submitted");
   };
 

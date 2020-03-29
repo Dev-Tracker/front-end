@@ -3,6 +3,7 @@ import RegisterForm from "../components/register-form";
 import { NavLink, Route, Switch } from "react-router-dom";
 import Corporate from "./corporate";
 import Login from "./log-in";
+
 const Register = () => {
   return (
     <div className="logContainer">

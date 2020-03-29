@@ -9,7 +9,7 @@ import Register from "../pages/register";
 import Marketing from "../pages/marketing";
 import Corporate from "../pages/corporate";
 
-const marketingNav = () => {
+const MarketingNav = () => {
   const ColorButton = withStyles(theme => ({
     root: {
       color: theme.palette.getContrastText(blue[800]),
@@ -19,6 +19,7 @@ const marketingNav = () => {
       }
     }
   }))(Button);
+
   return (
     <>
       <nav>
@@ -41,11 +42,11 @@ const marketingNav = () => {
           {Marketing}
         </Route>
         <Route path="/log-in">{LogInPage}</Route>
-        <Route path="/register">{Register}</Route>
+        <Route exact path="/register" component={Register} />
         <Route path="/tos-privacy">{Corporate}</Route>
       </Switch>
     </>
   );
 };
 
-export default marketingNav;
+export default MarketingNav;

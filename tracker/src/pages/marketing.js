@@ -8,7 +8,6 @@ import Bootcamp from "../components/jobSeekers";
 const marketing = () => {
   return (
     <div>
-      {/* <h1>Your new career is a track away</h1> */}
       <CommandCenter />
       <Organize />
       <StandOut />
